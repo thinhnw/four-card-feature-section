@@ -51,7 +51,7 @@ p {
 }
 .card-header {
     width: 100%;
-    border-top-width: 3px;
+    border-top-width: 4px;
     border-top-style: solid;
 }
 .card-body {
@@ -67,15 +67,55 @@ p {
 .card-body p {
     font-size: 0.9rem;
 }
-.card-cyan {
+/* Card colors */
+.card-header-cyan {
     border-top-color: hsl(180, 62%, 55%);
 }
-.card-red {
+.card-header-red {
     border-top-color: hsl(0, 78%, 62%);
 }
-.card-orange {
+.card-header-orange {
     border-top-color: hsl(34, 97%, 64%);
 }
-.card-blue {
+.card-header-blue {
     border-top-color: hsl(212, 86%, 64%);
+}
+
+@media only screen and (min-width: 1439.98px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    /* Header Section */
+    .container {
+        width: 550px;
+        margin: 3% auto 0%;
+    }
+    /* Four-card Section */
+    #four-card-feature-section {
+        display: grid;
+        width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 140px);
+    }
+    .card {
+        width: 375px;
+        height: 250px;
+    }
+    .card-1 {
+        grid-column: 1;
+        grid-row: 2 / 3;
+    }
+    .card-2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .card-3 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .card-4 {
+        grid-column: 3;
+        grid-row: 2 / 3;
+    }
 }
